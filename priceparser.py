@@ -28,18 +28,18 @@ class PriceParser:
             if line[0] != '#' and line[0] != '\n':
                 #get name
                 name, junk = line.split(':')
-                line = ins.readline()
+                line = ins.readline().strip()
                 #get buy price
                 junk, buy = line.split(': ')
-                line = ins.readline()
+                line = ins.readline().strip()
                 #get sell price
                 junk, sell = line.split(': ') 
-                line = ins.reatline()
+                line = ins.readline().strip()
                 #get quantity
                 junk, qty = line.split(': ')
                 #calculate individual prices
-                buy_price = round(buy / qty, 2)
-                sell_price = round(sell / qty, 2)
+                buy_price = round(float(buy.replace(',','')) / float(qty), 2)
+                sell_price = round(float(sell.replace(',','')) / float(qty), 2)
                 #write to dictionary
                 self.sell_prices[name] = sell_price
                 self.buy_prices[name] = buy_price
@@ -49,7 +49,7 @@ class PriceParser:
     def write_sell_prices(self):
         with open(sell_file, 'w') as out:
             for key in self.sell_prices:
-                s = key + ': ' + self.sell_prices[key]
+                s = key + ': ' + str(self.sell_prices[key]) + '\n'
                 out.write(s)
         out.close()
 
