@@ -1,7 +1,7 @@
 #imports
 
-in_file = "prices.txt"
-sell_file = "worth.txt"
+in_file = "prices.yml"
+sell_file = "worth.yml"
 buy_file = "server-price.txt"
 
 #class
@@ -48,8 +48,9 @@ class PriceParser:
     #write sale prices
     def write_sell_prices(self):
         with open(sell_file, 'w') as out:
+            out.write('worth: \n')
             for key in self.sell_prices:
-                s = key + ': ' + str(self.sell_prices[key]) + '\n'
+                s = '    ' + key + ': ' + str(self.sell_prices[key]) + '\n'
                 out.write(s)
         out.close()
 
