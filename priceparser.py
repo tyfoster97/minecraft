@@ -1,6 +1,6 @@
 #imports
-import os
 
+in_file = "prices.txt"
 sell_file = "worth.txt"
 buy_file = "server-price.txt"
 
@@ -56,3 +56,8 @@ class PriceParser:
     #write buy prices
     def write_buy_prices(self):
         pass
+
+if __name__=='__main__':
+    pp = PriceParser(in_file)
+    pp.read()
+    pp.write_sell_prices()
