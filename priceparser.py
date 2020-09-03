@@ -41,6 +41,7 @@ class PriceParser:
                 buy_price = round(float(buy.replace(',','')) / float(qty), 2)
                 sell_price = round(float(sell.replace(',','')) / float(qty), 2)
                 #write to dictionary
+                name = name.replace('_','')
                 self.sell_prices[name] = sell_price
                 self.buy_prices[name] = buy_price
         ins.close()
