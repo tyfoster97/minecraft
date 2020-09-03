@@ -50,6 +50,10 @@ cobweb:
     quantity: 8
 
 # GROUND #
+soul_soil:
+    buyPrice: 1024
+    sellPrice: 256
+    quantity: 64
 magma_block:
     buyPrice: 1024
     sellPrice: 256
@@ -66,6 +70,10 @@ netherrack:
     buyPrice: 64
     sellPrice: 16
     quantity: 64
+blackstone:
+    buyPrice: 64
+    sellPrice: 16
+    quantity: 16
 soul_sand:
     buyPrice: 784
     sellPrice: 196
@@ -106,6 +114,10 @@ obsidian:
     buyPrice: 4096
     sellPrice: 1024
     quantity: 16
+crying_obsidian:
+    buyPrice: 4096
+    sellPrice: 1024
+    quantity: 2.4
 
 # SAPLINGS #
 oak_sapling:
@@ -310,6 +322,10 @@ twisting_vines:
     quantity: 16
 
 # ORES #
+ancient_debris:
+    buyPrice: 4096
+    sellPrice: 1024
+    quantity: 1
 gold_ore:
     buyPrice: 2048
     sellPrice: 512
@@ -539,6 +555,14 @@ nether_wart_block:
     buyPrice: 6912
     sellPrice: 1728
     quantity: 16
+nether_wart_block:
+    buyPrice: 6912
+    sellPrice: 1728
+    quantity: 16
+warped_wart_block:
+    buyPrice: 6912
+    sellPrice: 1728
+    quantity: 8
 hay_block:
     buyPrice: 3456
     sellPrice: 864
@@ -1394,6 +1418,10 @@ purpur_pillar:
     quantity: 32
 
 # STAIRS #
+blackstone_stairs:
+    buyPrice: 256
+    sellPrice: 64
+    quantity: 1
 red_sandstone_stairs:
     buyPrice: 350
     sellPrice: 88
