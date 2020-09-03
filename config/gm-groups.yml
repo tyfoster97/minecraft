@@ -1,0 +1,96 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Default:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - g:bukkit_default
+    - g:dc_default
+    - g:essentials_default
+    - g:groupmanager_default
+    - g:lwc_default
+    - g:wg_default
+    - g:vote_default
+    info:
+      build: false
+      prefix: '&e'
+      suffix: ''
+  Builder:
+    default: true
+    permissions: []
+    inheritance:
+    - default
+    - g:essentials_builder
+    - g:lwc_builder
+    - g:wg_builder
+    info:
+      build: true
+      prefix: '&2'
+      suffix: ''
+  VIP:
+    default: false
+    permissions:
+    - essentials.sethome.multiple.vip
+    - worldguard.region.vip
+    inheritance:
+    - builder
+    info:
+      build: true
+      prefix: '&2'
+      suffix: '-vip'
+  Moderator:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:groupmanager_moderator
+    - g:lwc_moderator
+    - g:wg_moderator
+    - g:vanish_moderator
+    - g:vote_moderator
+    info:
+      build: true
+      prefix: '&5'
+      suffix: ''
+  Admin:
+    default: false
+    permissions: []
+    inheritance:
+    - moderator
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:dc_admin
+    - g:groupmanager_admin
+    - g:lwc_admin
+    - g:wg_admin
+    - g:vanish_admin
+    - g:vote_admin
+    info:
+      build: true
+      prefix: '&c'
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - '*'
+    - +vanish.effects.toggle.all
+    - -vanish.effects.*
+    - lwc.admin.clear
+    inheritance:
+    - admin
+    info:
+      build: true
+      prefix: '&4'
+      suffix: ''
