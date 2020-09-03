@@ -1,8 +1,9 @@
 #imports
 
-in_file = "prices.yml"
+in_file = "data/prices.yml"
+obj_file = "data/sellable.txt"
 sell_file = "worth.yml"
-buy_file = "server-price.txt"
+buy_file = "server-price.yml"
 
 #class
 class PriceParser:
