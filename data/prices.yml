@@ -2930,8 +2930,8 @@ pumpkin_pie:
     sellPrice: 1280
     quantity: 64
 firework_rocket:
-    buyPrice: 3584
-    sellPrice: 896
+    buyPrice: 1600
+    sellPrice: 400
     quantity: 16
 firework_star:
     buyPrice: 3584
@@ -3046,8 +3046,8 @@ shield:
     sellPrice: 36
     quantity: 1
 elytra:
-    buyPrice: 65536
-    sellPrice: 16384
+    buyPrice: 64000
+    sellPrice: 16000
     quantity: 1
 spruce_boat:
     buyPrice: 40
