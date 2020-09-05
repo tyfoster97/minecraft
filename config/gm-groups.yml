@@ -90,7 +90,7 @@ groups:
     permissions: []
     inheritance:
     - admin
-    - g:essemtials_banker
+    - g:essentials_banker
     info:
       build: true
       prefix: '&c'

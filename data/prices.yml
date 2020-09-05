@@ -1385,13 +1385,13 @@ diamond_sword:
     buyPrice: 16400.0
     quantity: 1.0
 diamond_shovel:
-    buyPrice: 8200.0
+    buyPrice: 16400.0
     quantity: 1.0
 diamond_pickaxe:
-    buyPrice: 24584.0
+    buyPrice: 16400.0
     quantity: 1.0
 diamond_axe:
-    buyPrice: 24584.0
+    buyPrice: 16400.0
     quantity: 1.0
 stick:
     buyPrice: 4.0
