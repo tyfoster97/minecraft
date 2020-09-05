@@ -33,7 +33,6 @@ groups:
     - default
     - g:essentials_builder
     - g:lwc_builder
-    - g:we_builder
     - g:wg_builder
     info:
       build: true
@@ -49,7 +48,7 @@ groups:
     info:
       build: true
       prefix: '&2'
-      suffix: '-vip'
+      suffix: ''
   Moderator:
     default: false
     permissions: []
