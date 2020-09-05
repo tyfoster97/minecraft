@@ -1,0 +1,113 @@
+# EssentialsX kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {USERNAME} to specify the player receiving the kit.
+# {PLAYER} will show the player's displayname instead of username.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+# For more information, visit http://wiki.ess3.net/wiki/Kits
+kits:
+  mod:
+    delay: 6000
+    items:
+    - leather
+    - wooden_axe
+  admin:
+    delay: 6000
+    items:
+    - jack_o_lantern
+  tools-w:
+    delay: 600
+    items:
+    - wooden_axe
+    - wooden_hoe
+    - wooden_pickaxe
+    - wooden_shovel
+    - wooden_sword
+  tools-s:
+    delay: 600
+    items:
+    - stone_axe
+    - stone_hoe
+    - stone_pickaxe
+    - stone_shovel
+    - stone_sword
+  tools-i:
+    delay: 600
+    items:
+    - iron_axe
+    - iron_hoe
+    - iron_pickaxe
+    - iron_shovel
+    - iron_sword
+  tools-g:
+    delay: 600
+    items:
+    - golden_axe
+    - golden_hoe
+    - golden_pickaxe
+    - golden_shovel
+    - golden_sword
+  tools-d:
+    delay: 600
+    items:
+    - diamond_axe
+    - diamond_hoe
+    - diamond_pickaxe
+    - diamond_shovel
+    - diamond_sword
+  tools-n:
+    delay: 600
+    items: []
+  #iron lvl 1 tools
+  tools-ie1:
+    delay: 600
+    items: []
+  #iron lvl 3
+  tools-ie3:
+    delay: 600
+    items: []
+  #iron lvl 5
+  tools-ie5:
+    delay: 600
+    items: []
+  #gold lvl 1
+  tools-ge1:
+    delay: 600
+    items: []
+  #gold lvl 3
+  tools-ge3:
+    delay: 600
+    items: []
+  #gold lvl 5
+  tools-ge5:
+    delay: 600
+    items: []
+  #diamond lvl 1
+  tools-de1:
+    delay: 600
+    items: []
+  #diamond lvl 3
+  tools-de3:
+    delay: 600
+    items: []
+  #diamond lvl 5
+  tools-de4:
+    delay: 600
+    items: []
+  #netherite lvl 1
+  tools-ne1:
+    delay: 600
+    items: []
+  #netherite lvl 3
+  tools-ne3:
+    delay: 600
+    items: []
+  #netherite lvl 5
+  tools-ne5:
+    delay: 600
+    items: []
