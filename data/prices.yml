@@ -1,3151 +1,2046 @@
-# UltimateShops for Craftbukkit / Spigot
-# Author: Brandon (ThirtyVirus) Calabrese
-#
-# YouTube:      https://youtube.com/channel/thirtyvirus
-# Twitter:      https://twitter.com/thirtyvirus
-# SpigotMC:     https://spigotmc.org/members/179587/
-# BUY PREMIUM:  https://spigotmc.org/resources/64925/
-
-# FILE: suggested_prices.yml
-# This is an optional file that serves the purpose of suggesting an item price such that
-# new players know what they should price their items at. These suggested prices will
-# come up by default when making a new shop. You may add as many or few items as you like, 
-# although for your convenience I filled in some values that I determined using ProjectE EMC values.
-# I also made some quesses as to what a standard transaction would be with quantity.
-
-# To toggle this feature, seek out "suggest-buy-prices", "suggest-sell-prices", and "suggest-quantity" in config.yml
-
-# format:
-# 
-# It is suggested you look up the proper item names here: (search for Name ID)
-# https://minecraft.gamepedia.com/Minecraft_Wiki
-# https://minecraftitemids.com/
-# You may use any combination of buyPrice, sellPrice, and quantity, or omit any that you don't want to change.
-# 
-# item_name:
-#   buyPrice: BUYPRICE
-#   sellPrice: SELLPRICE
-#   quantity: QUANTITY
-# 
-# EXAMPLE
-# cooked_porkchop:
-#   buyPrice: 512
-#   sellPrice: 128
-#   quantity: 8
-
-# ITEMS AND PRICES
-
-
-
-#############
-# PUNCHABLE #
-#############
-sponge:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
-cobweb:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 8
-
-# GROUND #
-soul_soil:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-magma_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
-end_stone:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-basalt:
-    buyPrice: 784
-    sellPrice: 196
-    quantity: 16
-netherrack:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-blackstone:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 16
-soul_sand:
-    buyPrice: 784
-    sellPrice: 196
-    quantity: 16
-granite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-diorite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-andesite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-dirt:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-cobblestone:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-sand:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-red_sand:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-gravel:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-obsidian:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
-crying_obsidian:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 2.4
-
-# SAPLINGS #
-oak_sapling:
-    buyPrice: 32
-    sellPrice: 8
-    quantity: 1
-spruce_sapling:
-    buyPrice: 32
-    sellPrice: 8
-    quantity: 1
-birch_sapling:
-    buyPrice: 32
-    sellPrice: 8
-    quantity: 1
-jungle_sapling:
-    buyPrice: 64
-    sellPrice: 8
-    quantity: 1
-acacia_sapling:
-    buyPrice: 32
-    sellPrice: 8
-    quantity: 1
-dark_oak_sapling:
-    buyPrice: 64
-    sellPrice: 8
-    quantity: 1
-
-# LEAVES #
-oak_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-spruce_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-birch_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-jungle_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-acacia_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-dark_oak_leaves:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-
-# PLANTS #
-sunflower:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-lilac:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-rose_bush:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-peony:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-tall_grass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-large_fern:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-melon:
-    buyPrice: 2304
-    sellPrice: 576
-    quantity: 16
-vine:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-pumpkin:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-carved_pumpkin:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-grass:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 8
-fern:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 8
-dead_bush:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 8
-seagrass:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 8
-sea_pickle:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 8
-dandelion:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-poppy:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-blue_orchid:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-allium:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-azure_bluet:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-red_tulip:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-orange_tulip:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-white_tulip:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-pink_tulip:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-oxeye_daisy:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-cornflower:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-lily_of_the_valley:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-wither_rose:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-brown_mushroom:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-red_mushroom:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-crimson_fungus:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-warped_fungus:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-crimson_roots:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-warped_roots:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-nether_sprouts:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-weeping_vines:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-twisting_vines:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-
-# ORES #
-ancient_debris:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-gold_ore:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 1
-iron_ore:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 8
-coal_ore:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 8
-nether_gold_ore:
-    buyPrice: 2048
-    sellPrice: 563.2
-    quantity: 1
-diamond_ore:
-    buyPrice: 8192
-    sellPrice: 2252.8
-    quantity: 1
-redstone_ore:
-    buyPrice: 320
-    sellPrice: 80
-    quantity: 1
-
-# LOGS #
-brown_mushroom_block:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 8
-red_mushroom_block:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 8
-mushroom_stem:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 8
-oak_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-spruce_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-birch_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-jungle_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-acacia_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-dark_oak_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-crimson_stem:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-warped_stem:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-chorus_plant:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-chorus_flower:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-cactus:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-
-# WOOL #
-white_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-orange_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-magenta_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-light_blue_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-yellow_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-lime_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-pink_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-gray_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-light_gray_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-cyan_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-purple_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-blue_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-brown_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-green_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-red_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-black_wool:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 16
-#carpet
-white_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-orange_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-magenta_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_blue_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-yellow_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-lime_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-pink_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-gray_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_gray_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-cyan_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-purple_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-blue_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-brown_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-green_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-red_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-black_carpet:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-
-
-
-#############
-# CRAFTABLE #
-#############
-
-# MISC #
-slime_block:
-    buyPrice: 13824
-    sellPrice: 3456
-    quantity: 64
-nether_wart_block:
-    buyPrice: 6912
-    sellPrice: 1728
-    quantity: 16
-nether_wart_block:
-    buyPrice: 6912
-    sellPrice: 1728
-    quantity: 16
-warped_wart_block:
-    buyPrice: 6912
-    sellPrice: 1728
-    quantity: 8
-hay_block:
-    buyPrice: 3456
-    sellPrice: 864
-    quantity: 16
-chiseled_quartz_block:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
-iron_bars:
-    buyPrice: 6144
-    sellPrice: 1536
-    quantity: 64
-chain:
-    buyPrice: 311.63
-    sellPrice: 77.91
-    quantity: 1
-glass_pane:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
-mossy_cobblestone:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-note_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 8
-jukebox:
-    buyPrice: 8256
-    sellPrice: 2064
-    quantity: 1
-tnt:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-bookshelf:
-    buyPrice: 5376
-    sellPrice: 1344
-    quantity: 16
-snow:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-snow_block:
-    buyPrice: 256
-    sellPrice: 32
-    quantity: 64
-packed_ice:
-    buyPrice: 9216
-    sellPrice: 2304
-    quantity: 16
-
-# BRICKS #
-red_sandstone:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-chiseled_red_sandstone:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-cut_red_sandstone:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-quartz_block:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
-end_stone_bricks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-bricks:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
-purpur_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-nether_bricks:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-cracked_nether_bricks:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-chiseled_nether_bricks:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-mossy_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-chiseled_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-#prismarine
-prismarine:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-prismarine_bricks:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-dark_prismarine:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-
-# LIGHTING #
-sea_lantern:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
-redstone_lamp:
-    buyPrice: 1792
-    sellPrice: 448
-    quantity: 1
-glowstone:
-    buyPrice: 24576
-    sellPrice: 6144
-    quantity: 16
-soul_torch:
-    buyPrice: 181
-    sellPrice: 45.25
-    qty: 1
-jack_o_lantern:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-torch:
-    buyPrice: 576
-    sellPrice: 144
-    quantity: 64
-end_rod:
-    buyPrice: 24576
-    sellPrice: 6144
-    quantity: 16
-
-# UTILITY #
-hopper:
-    buyPrice: 21504
-    sellPrice: 5376
-    quantity: 16
-anvil:
-    buyPrice: 7305
-    sellPrice: 1826
-    quantity: 1
-beacon:
-    buyPrice: 128195
-    sellPrice: 32048
-    quantity: 1
-ender_chest:
-    buyPrice: 2304
-    sellPrice: 576
-    quantity: 1
-chest:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-crafting_table:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-furnace:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-enchanting_table:
-    buyPrice: 16,736
-    sellPrice: 4184
-    quantity: 1
-
-# TRAVEL #
-rail:
-    buyPrice: 6144
-    sellPrice: 1536
-    quantity: 64
-ladder:
-    buyPrice: 896
-    sellPrice: 224
-    quantity: 64
-
-# GROUND #
-coarse_dirt:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-sandstone:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 64
-chiseled_sandstone:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 64
-cut_sandstone:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 64
-clay:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 64
-
-# POLISHED #
-polished_granite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-polished_diorite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-polished_andesite:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-polished_basalt:
-    buyPrice: 784
-    sellPrice: 196
-    quantity: 16
-
-# FURNACE #
-cracked_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
 stone:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-smooth_quartz:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-smooth_red_sandstone:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-smooth_sandstone:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-smooth_stone:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-#terracotta
-terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-white_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-orange_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-magenta_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_blue_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-yellow_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-lime_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-pink_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-gray_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_gray_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-cyan_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-purple_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-blue_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-brown_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-green_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-red_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-black_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-#stained glass
-white_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-orange_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-magenta_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_blue_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-yellow_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-lime_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-pink_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-gray_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-light_gray_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-cyan_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-purple_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-blue_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-brown_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-green_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-red_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-black_stained_glass:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-white_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-orange_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-magenta_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-light_blue_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-yellow_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-lime_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-pink_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-gray_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-light_gray_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-cyan_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-purple_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-blue_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-brown_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-green_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-red_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-black_stained_glass_pane:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-
-# WOOD #
-#planks
-oak_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-spruce_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-birch_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-jungle_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-acacia_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-dark_oak_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-crimson_planks:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-warped_planks:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-#stripped logs
-stripped_oak_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_spruce_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_birch_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_jungle_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_acacia_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_dark_oak_log:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_crimson_stem:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_warped_stem:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-#stripped wood
-stripped_oak_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_spruce_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_birch_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_jungle_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_acacia_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_dark_oak_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_crimson_hyphae:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-stripped_warped_hyphae:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-#wood
-oak_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-spruce_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-birch_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-jungle_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-acacia_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-dark_oak_wood:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-crimson_hyphae:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 16
-warped_hyphae:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-
-# ORE BLOCK #
-coal_block:
-    buyPrice: 18432
-    sellPrice: 4608
-    quantity: 16
-emerald_block:
-    buyPrice: 73728
-    sellPrice: 18432
-    quantity: 1
-lapis_block:
-    buyPrice: 7776
-    sellPrice: 1944
-    quantity: 1
-gold_block:
-    buyPrice: 18432
-    sellPrice: 4608
-    quantity: 1
-iron_block:
-    buyPrice: 2304
-    sellPrice: 576
-    quantity: 1
-diamond_block:
-    buyPrice: 73728
-    sellPrice: 18432
-    quantity: 1
-
-# REDSTONE #
-activator_rail:
-    buyPrice: 4298
-    sellPrice: 1075
-    quantity: 16
-dropper:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-daylight_detector:
-    buyPrice: 3120
-    sellPrice: 780
-    quantity: 1
-redstone_block:
-    buyPrice: 9216
-    sellPrice: 2304
-    quantity: 16
-trapped_chest:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
-tripwire_hook:
-    buyPrice: 1600
-    sellPrice: 400
-    quantity: 16
-dispenser:
-    buyPrice: 952
-    sellPrice: 238
-    quantity: 8
-powered_rail:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 8
-detector_rail:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 8
-sticky_piston:
-    buyPrice: 2976
-    sellPrice: 744
-    quantity: 8
-piston:
-    buyPrice: 2784
-    sellPrice: 696
-    quantity: 8
-redstone_torch:
-    buyPrice: 1088
-    sellPrice: 272
-    quantity: 16
-lever:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 16
-#pressure plates
-light_weighted_pressure_plate:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 16
-heavy_weighted_pressure_plate:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
-stone_pressure_plate:
-    buyPrice: 32
-    sellPrice: 8
-    quantity: 1
-oak_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-spruce_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-birch_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-jungle_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-acacia_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-dark_oak_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-crimson_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-warped_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 8
-polished_blackstone_pressure_plate:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
-#buttons
-stone_button:
-    buyPrice: 16
-    sellPrice: 4
-    quantity: 16
-oak_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-spruce_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-birch_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-jungle_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-acacia_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-dark_oak_button:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
-
-# SLABS #
-oak_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-spruce_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-birch_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-jungle_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-acacia_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-dark_oak_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-crimson_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 128
-warped_slab:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 128
-stone_slab:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 128
-sandstone_slab:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 128
-petrified_oak_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-cobblestone_slab:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 128
-brick_slab:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 32
-stone_brick_slab:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 128
-nether_brick_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-quartz_slab:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 32
-red_sandstone_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-cut_red_sandstone_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-purpur_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-prismarine_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-prismarine_brick_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-dark_prismarine_slab:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-
-# PILLARS #
-quartz_pillar:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
-purpur_pillar:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-
-# STAIRS #
-blackstone_stairs:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 1
-red_sandstone_stairs:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-prismarine_stairs:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-dark_prismarine_stairs:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-acacia_stairs:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-dark_oak_stairs:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-quartz_stairs:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
-spruce_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-birch_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-jungle_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-crimson_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-warped_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 32
-sandstone_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-nether_brick_stairs:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-purpur_stairs:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
-oak_stairs:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 64
-cobblestone_stairs:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-brick_stairs:
-    buyPrice: 5568
-    sellPrice: 1392
-    quantity: 16
-stone_brick_stairs:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-lily_pad:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-
-# FENCES & WALLS #
-#fences
-nether_brick_fence:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-oak_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-spruce_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-birch_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-jungle_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-acacia_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-dark_oak_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-crimson_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-warped_fence:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-#gates
-oak_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-spruce_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-birch_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-jungle_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-acacia_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-dark_oak_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-crimson_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 16
-warped_fence_gate:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-#walls
-cobblestone_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-mossy_cobblestone_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 8
-brick_wall:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-prismarine_wall:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-red_sandstone_wall:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-mossy_stone_brick_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-granite_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-stone_brick_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 4
-nether_brick_wall:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-andesite_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-red_nether_brick_wall:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-sandstone_wall:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
-end_stone_brick_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-diorite_wall:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-blackstone_wall:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-polished_blackstone_wall:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-polished_blackstone_brick_wall:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-
-# DOORS #
-iron_trapdoor:
-    buyPrice: 288
-    sellPrice: 72
-    quantity: 1
-oak_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-spruce_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-birch_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-jungle_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-acacia_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-dark_oak_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-crimson_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 8
-warped_trapdoor:
-    buyPrice: 192
-    sellPrice: 48
-    quantity: 4
-
-
-
-##############
-# SILK TOUCH #
-##############
+    buyPrice: 1.0
+    quantity: 1.0
+granite:
+    buyPrice: 1.0
+    quantity: 1.0
+polished_granite:
+    buyPrice: 1.0
+    quantity: 1.0
+diorite:
+    buyPrice: 1.0
+    quantity: 1.0
+polished_diorite:
+    buyPrice: 1.0
+    quantity: 1.0
+andesite:
+    buyPrice: 1.0
+    quantity: 1.0
+polished_andesite:
+    buyPrice: 1.0
+    quantity: 1.0
 grass_block:
-    buyPrice: 640
-    sellPrice: 160
-    quantity: 64
+    buyPrice: 10.0
+    quantity: 1.0
+dirt:
+    buyPrice: 1.0
+    quantity: 1.0
+coarse_dirt:
+    buyPrice: 1.0
+    quantity: 1.0
 podzol:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-crimson_nylium:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
-warped_nylium:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 64
-lapis_ore:
-    buyPrice: 3456
-    sellPrice: 864
-    quantity: 1
-emerald_ore:
-    buyPrice: 8,192
-    sellPrice: 2048
-    quantity: 1
-ice:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
-infested_stone:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-infested_cobblestone:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-infested_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-infested_mossy_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-infested_cracked_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-infested_chiseled_stone_bricks:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 1
-mycelium:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 16
-farmland:
-    buyPrice: 10
-    sellPrice: 2.5
-    quantity: 1
-nether_quartz_ore:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
-grass_path:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
-
-
-
-############
-# CREATIVE #
-############
+    buyPrice: 1.0
+    quantity: 1.0
+cobblestone:
+    buyPrice: 1.0
+    quantity: 1.0
+oak_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+spruce_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+birch_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+jungle_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+acacia_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+dark_oak_planks:
+    buyPrice: 8.0
+    quantity: 1.0
+oak_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
+spruce_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
+birch_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
+jungle_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
+acacia_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
+dark_oak_sapling:
+    buyPrice: 32.0
+    quantity: 1.0
 bedrock:
-    buyPrice: 1000000
-    sellPrice: 0
-    quantity: 1
+    buyPrice: 1000000.0
+    quantity: 1.0
+sand:
+    buyPrice: 1.0
+    quantity: 1.0
+red_sand:
+    buyPrice: 1.0
+    quantity: 1.0
+gravel:
+    buyPrice: 1.0
+    quantity: 1.0
+gold_ore:
+    buyPrice: 2048.0
+    quantity: 1.0
+iron_ore:
+    buyPrice: 256.0
+    quantity: 1.0
+coal_ore:
+    buyPrice: 128.0
+    quantity: 1.0
+oak_log:
+    buyPrice: 32.0
+    quantity: 1.0
+spruce_log:
+    buyPrice: 32.0
+    quantity: 1.0
+birch_log:
+    buyPrice: 32.0
+    quantity: 1.0
+jungle_log:
+    buyPrice: 32.0
+    quantity: 1.0
+acacia_log:
+    buyPrice: 32.0
+    quantity: 1.0
+dark_oak_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_oak_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_spruce_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_birch_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_jungle_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_acacia_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_dark_oak_log:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_oak_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_spruce_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_birch_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_jungle_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_acacia_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+stripped_dark_oak_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+oak_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+spruce_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+birch_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+jungle_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+acacia_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+dark_oak_wood:
+    buyPrice: 32.0
+    quantity: 1.0
+oak_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+spruce_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+birch_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+jungle_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+acacia_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+dark_oak_leaves:
+    buyPrice: 1.0
+    quantity: 1.0
+sponge:
+    buyPrice: 8192.0
+    quantity: 1.0
 wet_sponge:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
+glass:
+    buyPrice: 16.0
+    quantity: 1.0
+lapis_ore:
+    buyPrice: 3456.0
+    quantity: 1.0
+lapis_block:
+    buyPrice: 7776.0
+    quantity: 1.0
+dispenser:
+    buyPrice: 119.0
+    quantity: 1.0
+sandstone:
+    buyPrice: 4.0
+    quantity: 1.0
+chiseled_sandstone:
+    buyPrice: 4.0
+    quantity: 1.0
+cut_sandstone:
+    buyPrice: 4.0
+    quantity: 1.0
+note_block:
+    buyPrice: 128.0
+    quantity: 1.0
+powered_rail:
+    buyPrice: 2048.0
+    quantity: 1.0
+detector_rail:
+    buyPrice: 256.0
+    quantity: 1.0
+sticky_piston:
+    buyPrice: 372.0
+    quantity: 1.0
+cobweb:
+    buyPrice: 64.0
+    quantity: 1.0
+grass:
+    buyPrice: 16.0
+    quantity: 1.0
+fern:
+    buyPrice: 16.0
+    quantity: 1.0
+dead_bush:
+    buyPrice: 16.0
+    quantity: 1.0
+seagrass:
+    buyPrice: 16.0
+    quantity: 1.0
+sea_pickle:
+    buyPrice: 128.0
+    quantity: 1.0
+piston:
+    buyPrice: 348.0
+    quantity: 1.0
+white_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+orange_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+magenta_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+light_blue_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+yellow_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+lime_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+pink_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+gray_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+light_gray_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+cyan_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+purple_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+blue_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+brown_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+green_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+red_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+black_wool:
+    buyPrice: 48.0
+    quantity: 1.0
+dandelion:
+    buyPrice: 32.0
+    quantity: 1.0
+poppy:
+    buyPrice: 32.0
+    quantity: 1.0
+blue_orchid:
+    buyPrice: 32.0
+    quantity: 1.0
+allium:
+    buyPrice: 32.0
+    quantity: 1.0
+azure_bluet:
+    buyPrice: 32.0
+    quantity: 1.0
+red_tulip:
+    buyPrice: 32.0
+    quantity: 1.0
+orange_tulip:
+    buyPrice: 32.0
+    quantity: 1.0
+white_tulip:
+    buyPrice: 32.0
+    quantity: 1.0
+pink_tulip:
+    buyPrice: 32.0
+    quantity: 1.0
+oxeye_daisy:
+    buyPrice: 32.0
+    quantity: 1.0
+brown_mushroom:
+    buyPrice: 32.0
+    quantity: 1.0
+red_mushroom:
+    buyPrice: 32.0
+    quantity: 1.0
+gold_block:
+    buyPrice: 18432.0
+    quantity: 1.0
+iron_block:
+    buyPrice: 2304.0
+    quantity: 1.0
+oak_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+spruce_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+birch_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+jungle_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+acacia_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+dark_oak_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+stone_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+sandstone_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+petrified_oak_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+cobblestone_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+brick_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+nether_brick_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+quartz_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+red_sandstone_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+purpur_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+prismarine_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+prismarine_brick_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+dark_prismarine_slab:
+    buyPrice: 8.0
+    quantity: 1.0
+smooth_quartz:
+    buyPrice: 32.0
+    quantity: 1.0
+smooth_red_sandstone:
+    buyPrice: 32.0
+    quantity: 1.0
+smooth_sandstone:
+    buyPrice: 32.0
+    quantity: 1.0
+smooth_stone:
+    buyPrice: 32.0
+    quantity: 1.0
+bricks:
+    buyPrice: 256.0
+    quantity: 1.0
+tnt:
+    buyPrice: 964.0
+    quantity: 1.0
+bookshelf:
+    buyPrice: 336.0
+    quantity: 1.0
+mossy_cobblestone:
+    buyPrice: 8.0
+    quantity: 1.0
+obsidian:
+    buyPrice: 256.0
+    quantity: 1.0
+torch:
+    buyPrice: 9.0
+    quantity: 1.0
+end_rod:
+    buyPrice: 1536.0
+    quantity: 1.0
+chorus_flower:
+    buyPrice: 32.0
+    quantity: 1.0
+purpur_block:
+    buyPrice: 32.0
+    quantity: 1.0
+purpur_pillar:
+    buyPrice: 32.0
+    quantity: 1.0
+purpur_stairs:
+    buyPrice: 32.0
+    quantity: 1.0
 spawner:
-    buyPrice: 1000000
-    sellPrice: 0
-    quantity: 1
-end_portal_frame:
-    buyPrice: 1000000
-    sellPrice: 0
-    quantity: 12
+    buyPrice: 1000000.0
+    quantity: 1.0
+oak_stairs:
+    buyPrice: 12.0
+    quantity: 1.0
+chest:
+    buyPrice: 64.0
+    quantity: 1.0
+diamond_block:
+    buyPrice: 73728.0
+    quantity: 1.0
+crafting_table:
+    buyPrice: 32.0
+    quantity: 1.0
+furnace:
+    buyPrice: 8.0
+    quantity: 1.0
+ladder:
+    buyPrice: 14.0
+    quantity: 1.0
+rail:
+    buyPrice: 96.0
+    quantity: 1.0
+cobblestone_stairs:
+    buyPrice: 1.0
+    quantity: 1.0
+lever:
+    buyPrice: 4.0
+    quantity: 1.0
+stone_pressure_plate:
+    buyPrice: 2.0
+    quantity: 1.0
+oak_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+spruce_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+birch_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+jungle_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+acacia_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+dark_oak_pressure_plate:
+    buyPrice: 16.0
+    quantity: 1.0
+redstone_ore:
+    buyPrice: 320.0
+    quantity: 1.0
+redstone_torch:
+    buyPrice: 68.0
+    quantity: 1.0
+stone_button:
+    buyPrice: 1.0
+    quantity: 1.0
+snow:
+    buyPrice: 2.0
+    quantity: 1.0
+ice:
+    buyPrice: 8.0
+    quantity: 1.0
+snow_block:
+    buyPrice: 4.0
+    quantity: 1.0
+cactus:
+    buyPrice: 8.0
+    quantity: 1.0
+clay:
+    buyPrice: 64.0
+    quantity: 1.0
+jukebox:
+    buyPrice: 8256.0
+    quantity: 1.0
+oak_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+spruce_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+birch_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+jungle_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+acacia_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+dark_oak_fence:
+    buyPrice: 12.0
+    quantity: 1.0
+pumpkin:
+    buyPrice: 16.0
+    quantity: 1.0
+carved_pumpkin:
+    buyPrice: 16.0
+    quantity: 1.0
+netherrack:
+    buyPrice: 1.0
+    quantity: 1.0
+soul_sand:
+    buyPrice: 49.0
+    quantity: 1.0
+glowstone:
+    buyPrice: 1536.0
+    quantity: 1.0
+jack_o_lantern:
+    buyPrice: 16.0
+    quantity: 1.0
+oak_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+spruce_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+birch_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+jungle_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+acacia_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+dark_oak_trapdoor:
+    buyPrice: 24.0
+    quantity: 1.0
+stone_bricks:
+    buyPrice: 1.0
+    quantity: 1.0
+mossy_stone_bricks:
+    buyPrice: 1.0
+    quantity: 1.0
+cracked_stone_bricks:
+    buyPrice: 1.0
+    quantity: 1.0
+chiseled_stone_bricks:
+    buyPrice: 1.0
+    quantity: 1.0
+iron_bars:
+    buyPrice: 96.0
+    quantity: 1.0
+glass_pane:
+    buyPrice: 24.0
+    quantity: 1.0
+melon:
+    buyPrice: 144.0
+    quantity: 1.0
+vine:
+    buyPrice: 64.0
+    quantity: 1.0
+oak_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+spruce_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+birch_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+jungle_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+acacia_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+dark_oak_fence_gate:
+    buyPrice: 12.0
+    quantity: 1.0
+brick_stairs:
+    buyPrice: 348.0
+    quantity: 1.0
+stone_brick_stairs:
+    buyPrice: 1.0
+    quantity: 1.0
+mycelium:
+    buyPrice: 512.0
+    quantity: 1.0
+lily_pad:
+    buyPrice: 16.0
+    quantity: 1.0
+nether_bricks:
+    buyPrice: 2.0
+    quantity: 1.0
+nether_brick_fence:
+    buyPrice: 8.0
+    quantity: 1.0
+nether_brick_stairs:
+    buyPrice: 8.0
+    quantity: 1.0
+enchanting_table:
+    buyPrice: 16736.0
+    quantity: 1.0
+end_stone:
+    buyPrice: 8.0
+    quantity: 1.0
+end_stone_bricks:
+    buyPrice: 8.0
+    quantity: 1.0
+redstone_lamp:
+    buyPrice: 1792.0
+    quantity: 1.0
+sandstone_stairs:
+    buyPrice: 8.0
+    quantity: 1.0
+emerald_ore:
+    buyPrice: 8192.0
+    quantity: 1.0
+ender_chest:
+    buyPrice: 2304.0
+    quantity: 1.0
+tripwire_hook:
+    buyPrice: 100.0
+    quantity: 1.0
+emerald_block:
+    buyPrice: 73728.0
+    quantity: 1.0
+spruce_stairs:
+    buyPrice: 8.0
+    quantity: 1.0
+birch_stairs:
+    buyPrice: 8.0
+    quantity: 1.0
+jungle_stairs:
+    buyPrice: 8.0
+    quantity: 1.0
+beacon:
+    buyPrice: 128195.0
+    quantity: 1.0
+cobblestone_wall:
+    buyPrice: 1.0
+    quantity: 1.0
+mossy_cobblestone_wall:
+    buyPrice: 1.0
+    quantity: 1.0
+oak_button:
+    buyPrice: 8.0
+    quantity: 1.0
+spruce_button:
+    buyPrice: 8.0
+    quantity: 1.0
+birch_button:
+    buyPrice: 8.0
+    quantity: 1.0
+jungle_button:
+    buyPrice: 8.0
+    quantity: 1.0
+acacia_button:
+    buyPrice: 8.0
+    quantity: 1.0
+dark_oak_button:
+    buyPrice: 8.0
+    quantity: 1.0
+anvil:
+    buyPrice: 7305.0
+    quantity: 1.0
 chipped_anvil:
-    buyPrice: 3652
-    sellPrice: 913
-    quantity: 1
+    buyPrice: 3652.0
+    quantity: 1.0
 damaged_anvil:
-    buyPrice: 1826
-    sellPrice: 456
-    quantity: 1
-
-
-### TO SORT ###
-
+    buyPrice: 1826.0
+    quantity: 1.0
+trapped_chest:
+    buyPrice: 64.0
+    quantity: 1.0
+light_weighted_pressure_plate:
+    buyPrice: 512.0
+    quantity: 1.0
+heavy_weighted_pressure_plate:
+    buyPrice: 4096.0
+    quantity: 1.0
+daylight_detector:
+    buyPrice: 3120.0
+    quantity: 1.0
+redstone_block:
+    buyPrice: 576.0
+    quantity: 1.0
+nether_quartz_ore:
+    buyPrice: 4096.0
+    quantity: 1.0
+hopper:
+    buyPrice: 1344.0
+    quantity: 1.0
+chiseled_quartz_block:
+    buyPrice: 4096.0
+    quantity: 1.0
+quartz_block:
+    buyPrice: 4096.0
+    quantity: 1.0
+quartz_pillar:
+    buyPrice: 4096.0
+    quantity: 1.0
+quartz_stairs:
+    buyPrice: 4096.0
+    quantity: 1.0
+activator_rail:
+    buyPrice: 268.62
+    quantity: 1.0
+dropper:
+    buyPrice: 64.0
+    quantity: 1.0
+white_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+orange_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+magenta_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+light_blue_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+yellow_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+lime_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+pink_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+gray_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+light_gray_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+cyan_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+purple_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+blue_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+brown_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+green_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+red_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+black_terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+iron_trapdoor:
+    buyPrice: 288.0
+    quantity: 1.0
+hay_block:
+    buyPrice: 216.0
+    quantity: 1.0
+white_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+orange_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+magenta_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+light_blue_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+yellow_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+lime_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+pink_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+gray_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+light_gray_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+cyan_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+purple_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+blue_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+brown_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+green_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+red_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+black_carpet:
+    buyPrice: 16.0
+    quantity: 1.0
+terracotta:
+    buyPrice: 16.0
+    quantity: 1.0
+coal_block:
+    buyPrice: 1152.0
+    quantity: 1.0
+packed_ice:
+    buyPrice: 72.0
+    quantity: 1.0
+acacia_stairs:
+    buyPrice: 16.0
+    quantity: 1.0
+dark_oak_stairs:
+    buyPrice: 16.0
+    quantity: 1.0
+slime_block:
+    buyPrice: 216.0
+    quantity: 1.0
+grass_path:
+    buyPrice: 16.0
+    quantity: 1.0
+sunflower:
+    buyPrice: 16.0
+    quantity: 1.0
+lilac:
+    buyPrice: 16.0
+    quantity: 1.0
+rose_bush:
+    buyPrice: 16.0
+    quantity: 1.0
+peony:
+    buyPrice: 16.0
+    quantity: 1.0
+tall_grass:
+    buyPrice: 16.0
+    quantity: 1.0
+large_fern:
+    buyPrice: 16.0
+    quantity: 1.0
+white_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+orange_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+magenta_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+light_blue_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+yellow_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+lime_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+pink_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+gray_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+light_gray_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+cyan_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+purple_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+blue_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+brown_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+green_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+red_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+black_stained_glass:
+    buyPrice: 16.0
+    quantity: 1.0
+white_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+orange_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+magenta_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+light_blue_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+yellow_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+lime_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+pink_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+gray_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+light_gray_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+cyan_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+purple_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+blue_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+brown_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+green_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+red_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+black_stained_glass_pane:
+    buyPrice: 5.47
+    quantity: 1.0
+prismarine:
+    buyPrice: 5.47
+    quantity: 1.0
+prismarine_bricks:
+    buyPrice: 5.47
+    quantity: 1.0
+dark_prismarine:
+    buyPrice: 5.47
+    quantity: 1.0
+prismarine_stairs:
+    buyPrice: 5.47
+    quantity: 1.0
+dark_prismarine_stairs:
+    buyPrice: 5.47
+    quantity: 1.0
+sea_lantern:
+    buyPrice: 1024.0
+    quantity: 1.0
+red_sandstone:
+    buyPrice: 5.47
+    quantity: 1.0
+chiseled_red_sandstone:
+    buyPrice: 5.47
+    quantity: 1.0
+cut_red_sandstone:
+    buyPrice: 5.47
+    quantity: 1.0
+red_sandstone_stairs:
+    buyPrice: 5.47
+    quantity: 1.0
+magma_block:
+    buyPrice: 1024.0
+    quantity: 1.0
+nether_wart_block:
+    buyPrice: 432.0
+    quantity: 1.0
 red_nether_bricks:
-    buyPrice: 350
-    sellPrice: 88
-    quantity: 64
+    buyPrice: 5.47
+    quantity: 1.0
 bone_block:
-    buyPrice: 6912
-    sellPrice: 1728
-    quantity: 16
+    buyPrice: 432.0
+    quantity: 1.0
 observer:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 1024.0
+    quantity: 1.0
 white_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 orange_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 magenta_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 light_blue_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 yellow_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 lime_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 pink_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 gray_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 light_gray_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 cyan_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 purple_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 blue_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 brown_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 green_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 red_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 black_shulker_box:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 white_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 orange_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 magenta_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 light_blue_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 yellow_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 lime_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 pink_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 gray_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 light_gray_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 cyan_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 purple_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 blue_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 brown_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 green_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 red_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 black_glazed_terracotta:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 white_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 orange_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 magenta_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 light_blue_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 yellow_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 lime_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 pink_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 gray_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 light_gray_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 cyan_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 purple_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 blue_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 brown_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 green_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 red_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 black_concrete:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 white_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 orange_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 magenta_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 light_blue_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 yellow_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 lime_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 pink_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 gray_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 light_gray_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 cyan_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 purple_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 blue_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 brown_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 green_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 red_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 black_concrete_powder:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 turtle_egg:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 1024.0
+    quantity: 1.0
 dead_tube_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_brain_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_bubble_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_fire_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_horn_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 tube_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 brain_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 bubble_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 fire_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 horn_coral_block:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 tube_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 brain_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 bubble_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 fire_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 horn_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_tube_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_brain_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_bubble_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_fire_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_horn_coral:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 tube_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 brain_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 bubble_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 fire_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 horn_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_tube_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_brain_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_bubble_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_fire_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 dead_horn_coral_fan:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 blue_ice:
-    buyPrice: 10368
-    sellPrice: 2592
-    quantity: 16
+    buyPrice: 650.0
+    quantity: 1.0
 conduit:
-    buyPrice: 20480
-    sellPrice: 5120
-    quantity: 1
+    buyPrice: 20480.0
+    quantity: 1.0
 iron_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 oak_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 spruce_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 birch_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 jungle_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 acacia_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 dark_oak_door:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 repeater:
-    buyPrice: 3232
-    sellPrice: 808
-    quantity: 16
+    buyPrice: 202.0
+    quantity: 1.0
 comparator:
-    buyPrice: 50272
-    sellPrice: 12568
-    quantity: 16
+    buyPrice: 3142.0
+    quantity: 1.0
 turtle_helmet:
-    buyPrice: 5120
-    sellPrice: 1280
-    quantity: 1
+    buyPrice: 5120.0
+    quantity: 1.0
 scute:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
+    buyPrice: 256.0
+    quantity: 1.0
 iron_shovel:
-    buyPrice: 264
-    sellPrice: 66
-    quantity: 1
+    buyPrice: 520.0
+    quantity: 1.0
 iron_pickaxe:
-    buyPrice: 780
-    sellPrice: 195
-    quantity: 1
+    buyPrice: 520.0
+    quantity: 1.0
 iron_axe:
-    buyPrice: 780
-    sellPrice: 195
-    quantity: 1
+    buyPrice: 520.0
+    quantity: 1.0
 flint_and_steel:
-    buyPrice: 260
-    sellPrice: 65
-    quantity: 1
+    buyPrice: 260.0
+    quantity: 1.0
 apple:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 16
+    buyPrice: 128.0
+    quantity: 1.0
 bow:
-    buyPrice: 60
-    sellPrice: 15
-    quantity: 1
+    buyPrice: 60.0
+    quantity: 1.0
 arrow:
-    buyPrice: 896
-    sellPrice: 224
-    quantity: 64
+    buyPrice: 14.0
+    quantity: 1.0
 coal:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 64
+    buyPrice: 128.0
+    quantity: 1.0
 charcoal:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 diamond:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 iron_ingot:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
+    buyPrice: 256.0
+    quantity: 1.0
 gold_ingot:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 1
+    buyPrice: 2048.0
+    quantity: 1.0
 iron_sword:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 1
+    buyPrice: 520.0
+    quantity: 1.0
 diamond_sword:
-    buyPrice: 16388
-    sellPrice: 4097
-    quantity: 1
+    buyPrice: 16400.0
+    quantity: 1.0
 diamond_shovel:
-    buyPrice: 8200
-    sellPrice: 2050
-    quantity: 1
+    buyPrice: 8200.0
+    quantity: 1.0
 diamond_pickaxe:
-    buyPrice: 24584
-    sellPrice: 6146
-    quantity: 1
+    buyPrice: 24584.0
+    quantity: 1.0
 diamond_axe:
-    buyPrice: 24584
-    sellPrice: 6146
-    quantity: 1
+    buyPrice: 24584.0
+    quantity: 1.0
 stick:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 64
+    buyPrice: 4.0
+    quantity: 1.0
 bowl:
-    buyPrice: 128
-    sellPrice: 32
-    quantity: 16
+    buyPrice: 8.0
+    quantity: 1.0
 mushroom_stew:
-    buyPrice: 136
-    sellPrice: 34
-    quantity: 1
+    buyPrice: 136.0
+    quantity: 1.0
 golden_sword:
-    buyPrice: 4104
-    sellPrice: 1026
-    quantity: 1
+    buyPrice: 4200.0
+    quantity: 1.0
 golden_shovel:
-    buyPrice: 2056
-    sellPrice: 514
-    quantity: 1
+    buyPrice: 4200.0
+    quantity: 1.0
 golden_pickaxe:
-    buyPrice: 6156
-    sellPrice: 1539
-    quantity: 1
+    buyPrice: 4200.0
+    quantity: 1.0
 golden_axe:
-    buyPrice: 6156
-    sellPrice: 1539
-    quantity: 1
+    buyPrice: 4200.0
+    quantity: 1.0
 string:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 64
+    buyPrice: 12.0
+    quantity: 1.0
 feather:
-    buyPrice: 3072
-    sellPrice: 768
-    quantity: 64
+    buyPrice: 48.0
+    quantity: 1.0
 gunpowder:
-    buyPrice: 816.4
-    sellPrice: 96
-    quantity: 1
+    buyPrice: 192.0
+    quantity: 1.0
 iron_hoe:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 1
+    buyPrice: 520.0
+    quantity: 1.0
 diamond_hoe:
-    buyPrice: 16400
-    sellPrice: 4100
-    quantity: 1
+    buyPrice: 16400.0
+    quantity: 1.0
 golden_hoe:
-    buyPrice: 4104
-    sellPrice: 1026
-    quantity: 1
+    buyPrice: 4200.0
+    quantity: 1.0
 wheat_seeds:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 wheat:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 16
+    buyPrice: 24.0
+    quantity: 1.0
 bread:
-    buyPrice: 1152
-    sellPrice: 288
-    quantity: 16
+    buyPrice: 72.0
+    quantity: 1.0
 leather_helmet:
-    buyPrice: 1280
-    sellPrice: 320
-    quantity: 1
+    buyPrice: 1000.0
+    quantity: 1.0
 leather_chestplate:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 1
+    buyPrice: 1600.0
+    quantity: 1.0
 leather_leggings:
-    buyPrice: 1792
-    sellPrice: 448
-    quantity: 1
+    buyPrice: 1400.0
+    quantity: 1.0
 leather_boots:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 800.0
+    quantity: 1.0
 chainmail_helmet:
-    buyPrice: 40960
-    sellPrice: 10240
-    quantity: 1
+    buyPrice: 40960.0
+    quantity: 1.0
 chainmail_chestplate:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 1
+    buyPrice: 65536.0
+    quantity: 1.0
 chainmail_leggings:
-    buyPrice: 57344
-    sellPrice: 14336
-    quantity: 1
+    buyPrice: 57344.0
+    quantity: 1.0
 chainmail_boots:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32768.0
+    quantity: 1.0
 iron_helmet:
-    buyPrice: 1280
-    sellPrice: 320
-    quantity: 1
+    buyPrice: 1200.0
+    quantity: 1.0
 iron_chestplate:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 1
+    buyPrice: 2100.0
+    quantity: 1.0
 iron_leggings:
-    buyPrice: 1792
-    sellPrice: 448
-    quantity: 1
+    buyPrice: 1800.0
+    quantity: 1.0
 iron_boots:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 1000.0
+    quantity: 1.0
 diamond_helmet:
-    buyPrice: 40960
-    sellPrice: 10240
-    quantity: 1
+    buyPrice: 41000.0
+    quantity: 1.0
 diamond_chestplate:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 1
+    buyPrice: 66600.0
+    quantity: 1.0
 diamond_leggings:
-    buyPrice: 57344
-    sellPrice: 14336
-    quantity: 1
+    buyPrice: 57400.0
+    quantity: 1.0
 diamond_boots:
-    buyPrice: 32768
-    sellPrice: 8192
-    quantity: 1
+    buyPrice: 32800.0
+    quantity: 1.0
 golden_helmet:
-    buyPrice: 10240
-    sellPrice: 2560
-    quantity: 1
+    buyPrice: 10300.0
+    quantity: 1.0
 golden_chestplate:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16400.0
+    quantity: 1.0
 golden_leggings:
-    buyPrice: 14336
-    sellPrice: 3584
-    quantity: 1
+    buyPrice: 14400.0
+    quantity: 1.0
 golden_boots:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8200.0
+    quantity: 1.0
 flint:
-    buyPrice: 512
-    sellPrice: 128
-    quantity: 64
+    buyPrice: 8.0
+    quantity: 1.0
 porkchop:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_porkchop:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 painting:
-    buyPrice: 1280
-    sellPrice: 320
-    quantity: 16
+    buyPrice: 80.0
+    quantity: 1.0
 golden_apple:
-    buyPrice: 1944
-    sellPrice: 486
-    quantity: 1
+    buyPrice: 1944.0
+    quantity: 1.0
 enchanted_golden_apple:
-    buyPrice: 147456
-    sellPrice: 36864
-    quantity: 1
+    buyPrice: 147456.0
+    quantity: 1.0
 sign:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 16
+    buyPrice: 52.0
+    quantity: 1.0
 bucket:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 1
+    buyPrice: 768.0
+    quantity: 1.0
 water_bucket:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 1
+    buyPrice: 768.0
+    quantity: 1.0
 lava_bucket:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 832.0
+    quantity: 1.0
 minecart:
-    buyPrice: 1280
-    sellPrice: 320
-    quantity: 1
+    buyPrice: 1280.0
+    quantity: 1.0
 saddle:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 redstone:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 64
+    buyPrice: 64.0
+    quantity: 1.0
 snowball:
-    buyPrice: 16
-    sellPrice: 4
-    quantity: 16
+    buyPrice: 1.0
+    quantity: 1.0
 oak_boat:
-    buyPrice: 160
-    sellPrice: 40
-    quantity: 1
+    buyPrice: 160.0
+    quantity: 1.0
 leather:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
+    buyPrice: 256.0
+    quantity: 1.0
 milk_bucket:
-    buyPrice: 833
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 833.0
+    quantity: 1.0
 pufferfish_bucket:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 832.0
+    quantity: 1.0
 salmon_bucket:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 832.0
+    quantity: 1.0
 cod_bucket:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 832.0
+    quantity: 1.0
 tropical_fish_bucket:
-    buyPrice: 832
-    sellPrice: 208
-    quantity: 1
+    buyPrice: 832.0
+    quantity: 1.0
 brick:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 16
+    buyPrice: 4096.0
+    quantity: 1.0
 clay_ball:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 16
+    buyPrice: 1024.0
+    quantity: 1.0
 sugar_cane:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 kelp:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 dried_kelp_block:
-    buyPrice: 18432
-    sellPrice: 4608
-    quantity: 64
+    buyPrice: 288.0
+    quantity: 1.0
 paper:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 book:
-    buyPrice: 12288
-    sellPrice: 3072
-    quantity: 16
+    buyPrice: 768.0
+    quantity: 1.0
 slime_ball:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 egg:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 compass:
-    buyPrice: 2288
-    sellPrice: 572
-    quantity: 1
+    buyPrice: 2288.0
+    quantity: 1.0
 fishing_rod:
-    buyPrice: 12
-    sellPrice: 3
-    quantity: 1
+    buyPrice: 12.0
+    quantity: 1.0
 clock:
-    buyPrice: 8256
-    sellPrice: 2064
-    quantity: 1
+    buyPrice: 8256.0
+    quantity: 1.0
 glowstone_dust:
-    buyPrice: 24576
-    sellPrice: 6144
-    quantity: 64
+    buyPrice: 384.0
+    quantity: 1.0
 cod:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 salmon:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 tropical_fish:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 pufferfish:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_cod:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_salmon:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 ink_sac:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 rose_red:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 cactus_green:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 cocoa_beans:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 lapis_lazuli:
-    buyPrice: 13824
-    sellPrice: 3456
-    quantity: 16
+    buyPrice: 864.0
+    quantity: 1.0
 purple_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 cyan_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 light_gray_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 gray_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 pink_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 lime_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 dandelion_yellow:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 light_blue_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 magenta_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 orange_dye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 bone_meal:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 bone:
-    buyPrice: 6144
-    sellPrice: 1536
-    quantity: 64
+    buyPrice: 96.0
+    quantity: 1.0
 sugar:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 cake:
-    buyPrice: 768
-    sellPrice: 192
-    quantity: 1
+    buyPrice: 768.0
+    quantity: 1.0
 white_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 orange_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 magenta_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 light_blue_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 yellow_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 lime_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 pink_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 gray_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 light_gray_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 cyan_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 purple_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 blue_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 brown_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 green_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 red_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 black_bed:
-    buyPrice: 168
-    sellPrice: 42
-    quantity: 1
+    buyPrice: 168.0
+    quantity: 1.0
 cookie:
-    buyPrice: 384
-    sellPrice: 96
-    quantity: 64
+    buyPrice: 6.0
+    quantity: 1.0
 shears:
-    buyPrice: 192
-    sellPrice: 96
-    quantity: 1
+    buyPrice: 192.0
+    quantity: 1.0
 melon_slice:
-    buyPrice: 1728
-    sellPrice: 342
-    quantity: 64
+    buyPrice: 27.0
+    quantity: 1.0
 dried_kelp:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 32
+    buyPrice: 32.0
+    quantity: 1.0
 pumpkin_seeds:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
+    buyPrice: 16.0
+    quantity: 1.0
 melon_seeds:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 16
+    buyPrice: 16.0
+    quantity: 1.0
 beef:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_beef:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 chicken:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_chicken:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 rotten_flesh:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 ender_pearl:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 16
+    buyPrice: 1024.0
+    quantity: 1.0
 blaze_rod:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 1
+    buyPrice: 1536.0
+    quantity: 1.0
 ghast_tear:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 1
+    buyPrice: 4096.0
+    quantity: 1.0
 gold_nugget:
-    buyPrice: 14563
-    sellPrice: 3640
-    quantity: 64
+    buyPrice: 227.55
+    quantity: 1.0
 nether_wart:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 glass_bottle:
-    buyPrice: 256
-    sellPrice: 64
-    quantity: 64
+    buyPrice: 4.0
+    quantity: 1.0
 spider_eye:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 16
+    buyPrice: 128.0
+    quantity: 1.0
 fermented_spider_eye:
-    buyPrice: 3072
-    sellPrice: 768
-    quantity: 16
+    buyPrice: 192.0
+    quantity: 1.0
 blaze_powder:
-    buyPrice: 12288
-    sellPrice: 3072
-    quantity: 16
+    buyPrice: 768.0
+    quantity: 1.0
 magma_cream:
-    buyPrice: 12672
-    sellPrice: 3168
-    quantity: 16
+    buyPrice: 792.0
+    quantity: 1.0
 brewing_stand:
-    buyPrice: 1539
-    sellPrice: 385
-    quantity: 1
+    buyPrice: 1539.0
+    quantity: 1.0
 cauldron:
-    buyPrice: 1792
-    sellPrice: 448
-    quantity: 1
+    buyPrice: 1792.0
+    quantity: 1.0
 ender_eye:
-    buyPrice: 1792
-    sellPrice: 448
-    quantity: 1
+    buyPrice: 1792.0
+    quantity: 1.0
 glistering_melon_slice:
-    buyPrice: 3888
-    sellPrice: 972
-    quantity: 16
+    buyPrice: 243.0
+    quantity: 1.0
 experience_bottle:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 16
+    buyPrice: 128.0
+    quantity: 1.0
 fire_charge:
-    buyPrice: 17408
-    sellPrice: 4352
-    quantity: 16
+    buyPrice: 1088.0
+    quantity: 1.0
 writable_book:
-    buyPrice: 448
-    sellPrice: 112
-    quantity: 1
+    buyPrice: 448.0
+    quantity: 1.0
 written_book:
-    buyPrice: 448
-    sellPrice: 112
-    quantity: 1
+    buyPrice: 448.0
+    quantity: 1.0
 emerald:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 item_frame:
-    buyPrice: 4608
-    sellPrice: 1152
-    quantity: 16
+    buyPrice: 288.0
+    quantity: 1.0
 flower_pot:
-    buyPrice: 3072
-    sellPrice: 768
-    quantity: 16
+    buyPrice: 192.0
+    quantity: 1.0
 carrot:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 potato:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 baked_potato:
-    buyPrice: 2560
-    sellPrice: 640
-    quantity: 64
+    buyPrice: 40.0
+    quantity: 1.0
 poisonous_potato:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 map:
-    buyPrice: 1344
-    sellPrice: 336
-    quantity: 1
+    buyPrice: 1344.0
+    quantity: 1.0
 golden_carrot:
-    buyPrice: 29511
-    sellPrice: 7377
-    quantity: 16
+    buyPrice: 1844.44
+    quantity: 1.0
 skeleton_skull:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 wither_skeleton_skull:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 player_head:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 zombie_head:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 creeper_head:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 dragon_head:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 carrot_on_a_stick:
-    buyPrice: 132
-    sellPrice: 33
-    quantity: 1
+    buyPrice: 132.0
+    quantity: 1.0
 nether_star:
-    buyPrice: 128000
-    sellPrice: 32000
-    quantity: 1
+    buyPrice: 128000.0
+    quantity: 1.0
 pumpkin_pie:
-    buyPrice: 5120
-    sellPrice: 1280
-    quantity: 64
+    buyPrice: 80.0
+    quantity: 1.0
 firework_rocket:
-    buyPrice: 1600
-    sellPrice: 400
-    quantity: 16
+    buyPrice: 225.0
+    quantity: 1.0
 firework_star:
-    buyPrice: 3584
-    sellPrice: 896
-    quantity: 16
+    buyPrice: 224.0
+    quantity: 1.0
 nether_brick:
-    buyPrice: 2048
-    sellPrice: 512
-    quantity: 64
+    buyPrice: 32.0
+    quantity: 1.0
 quartz:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 16
+    buyPrice: 1024.0
+    quantity: 1.0
 tnt_minecart:
-    buyPrice: 2244
-    sellPrice: 561
-    quantity: 1
+    buyPrice: 2244.0
+    quantity: 1.0
 hopper_minecart:
-    buyPrice: 2624
-    sellPrice: 656
-    quantity: 1
+    buyPrice: 2624.0
+    quantity: 1.0
 prismarine_shard:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 prismarine_crystals:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 rabbit:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_rabbit:
-    buyPrice: 9216
-    sellPrice: 2304
-    quantity: 16
+    buyPrice: 576.0
+    quantity: 1.0
 rabbit_stew:
-    buyPrice: 664
-    sellPrice: 166
-    quantity: 1
+    buyPrice: 664.0
+    quantity: 1.0
 rabbit_foot:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
+    buyPrice: 256.0
+    quantity: 1.0
 rabbit_hide:
-    buyPrice: 4096
-    sellPrice: 1024
-    quantity: 16
+    buyPrice: 256.0
+    quantity: 1.0
 armor_stand:
-    buyPrice: 400
-    sellPrice: 100
-    quantity: 16
+    buyPrice: 25.0
+    quantity: 1.0
 iron_horse_armor:
-    buyPrice: 6144
-    sellPrice: 1536
-    quantity: 1
+    buyPrice: 6144.0
+    quantity: 1.0
 golden_horse_armor:
-    buyPrice: 49152
-    sellPrice: 12288
-    quantity: 1
+    buyPrice: 49152.0
+    quantity: 1.0
 diamond_horse_armor:
-    buyPrice: 194208
-    sellPrice: 48552
-    quantity: 1
+    buyPrice: 194208.0
+    quantity: 1.0
 lead:
-    buyPrice: 1152
-    sellPrice: 288
-    quantity: 16
+    buyPrice: 72.0
+    quantity: 1.0
 name_tag:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 mutton:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 16
+    buyPrice: 64.0
+    quantity: 1.0
 cooked_mutton:
-    buyPrice: 9216
-    sellPrice: 2304
-    quantity: 16
+    buyPrice: 576.0
+    quantity: 1.0
 end_crystal:
-    buyPrice: 5845
-    sellPrice: 1461
-    quantity: 1
+    buyPrice: 5845.0
+    quantity: 1.0
 chorus_fruit:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 popped_chorus_fruit:
-    buyPrice: 3584
-    sellPrice: 896
-    quantity: 64
+    buyPrice: 56.0
+    quantity: 1.0
 beetroot:
-    buyPrice: 1536
-    sellPrice: 384
-    quantity: 64
+    buyPrice: 24.0
+    quantity: 1.0
 beetroot_seeds:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 64
+    buyPrice: 16.0
+    quantity: 1.0
 beetroot_soup:
-    buyPrice: 144
-    sellPrice: 36
-    quantity: 1
+    buyPrice: 144.0
+    quantity: 1.0
 dragon_breath:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 64
+    buyPrice: 256.0
+    quantity: 1.0
 shield:
-    buyPrice: 144
-    sellPrice: 36
-    quantity: 1
+    buyPrice: 144.0
+    quantity: 1.0
 elytra:
-    buyPrice: 64000
-    sellPrice: 16000
-    quantity: 1
+    buyPrice: 65600.0
+    quantity: 1.0
 spruce_boat:
-    buyPrice: 40
-    sellPrice: 10
-    quantity: 1
+    buyPrice: 40.0
+    quantity: 1.0
 birch_boat:
-    buyPrice: 40
-    sellPrice: 10
-    quantity: 1
+    buyPrice: 40.0
+    quantity: 1.0
 jungle_boat:
-    buyPrice: 40
-    sellPrice: 10
-    quantity: 1
+    buyPrice: 40.0
+    quantity: 1.0
 acacia_boat:
-    buyPrice: 40
-    sellPrice: 10
-    quantity: 1
+    buyPrice: 40.0
+    quantity: 1.0
 dark_oak_boat:
-    buyPrice: 40
-    sellPrice: 10
-    quantity: 1
+    buyPrice: 40.0
+    quantity: 1.0
 totem_of_undying:
-    buyPrice: 65536
-    sellPrice: 16384
-    quantity: 1
+    buyPrice: 65536.0
+    quantity: 1.0
 shulker_shell:
-    buyPrice: 16384
-    sellPrice: 4096
-    quantity: 1
+    buyPrice: 16384.0
+    quantity: 1.0
 iron_nugget:
-    buyPrice: 455
-    sellPrice: 114
-    quantity: 16
+    buyPrice: 28.44
+    quantity: 1.0
 music_disc_13:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_cat:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_blocks:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_chirp:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_far:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_mall:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_mellohi:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_stal:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_strad:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_ward:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_11:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 music_disc_wait:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 trident:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 phantom_membrane:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 1024.0
+    quantity: 1.0
 nautilus_shell:
-    buyPrice: 1024
-    sellPrice: 256
-    quantity: 1
+    buyPrice: 1024.0
+    quantity: 1.0
 heart_of_the_sea:
-    buyPrice: 8192
-    sellPrice: 2048
-    quantity: 1
+    buyPrice: 8192.0
+    quantity: 1.0
 tall_seagrass:
-    buyPrice: 64
-    sellPrice: 16
-    quantity: 64
+    buyPrice: 1.0
+    quantity: 1.0
+stone_sword:
+    buyPrice: 10.0
+    quantity: 1.0
+stone_axe:
+    buyPrice: 10.0
+    quantity: 1.0
+stone_shovel:
+    buyPrice: 10.0
+    quantity: 1.0
+stone_pickaxe:
+    buyPrice: 10.0
+    quantity: 1.0

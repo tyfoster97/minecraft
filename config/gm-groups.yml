@@ -19,6 +19,7 @@ groups:
     - g:essentials_default
     - g:groupmanager_default
     - g:lwc_default
+    - g:we_default
     - g:wg_default
     - g:vote_default
     info:
@@ -32,6 +33,7 @@ groups:
     - default
     - g:essentials_builder
     - g:lwc_builder
+    - g:we_builder
     - g:wg_builder
     info:
       build: true
@@ -57,6 +59,7 @@ groups:
     - g:essentials_moderator
     - g:groupmanager_moderator
     - g:lwc_moderator
+    - g:we_moderator
     - g:wg_moderator
     - g:vanish_moderator
     - g:vote_moderator
@@ -74,9 +77,20 @@ groups:
     - g:dc_admin
     - g:groupmanager_admin
     - g:lwc_admin
+    - g:we_admin
     - g:wg_admin
     - g:vanish_admin
     - g:vote_admin
+    info:
+      build: true
+      prefix: '&c'
+      suffix: ''
+  Banker:
+    default: false
+    permissions: []
+    inheritance:
+    - admin
+    - g:essemtials_banker
     info:
       build: true
       prefix: '&c'
@@ -85,11 +99,9 @@ groups:
     default: false
     permissions:
     - '*'
-    - +vanish.effects.toggle.all
-    - -vanish.effects.*
-    - lwc.admin.clear
     inheritance:
     - admin
+    - g:owner
     info:
       build: true
       prefix: '&4'

@@ -1,8 +1,10 @@
 groups:
-#
-# DEFAULT
-#
-#bukkit
+#########
+#       #
+# BUKIT #
+#       #
+#########
+#default
   g:bukkit_default:
     permissions:
     - -bukkit.command.plugins
@@ -10,66 +12,92 @@ groups:
     - bukkit.command.time
     - bukkit.command.time.add
     - bukkit.command.time.set
-#deathchest
+#moderator
+  g:bukkit_moderator:
+    permissions:
+    - bukkit.command.kick
+    - bukkit.command.unban
+    - bukkit.command.unban.ip
+    - bukkit.command.unban.player
+    - bukkit.command.whitelist
+    - bukkit.command.whitelist.add
+    - bukkit.command.whitelist.disable
+    - bukkit.command.whitelist.enable
+    - bukkit.command.whitelist.list
+    - bukkit.command.whitelist.reload
+    - bukkit.command.whitelist.remove
+    - minecraft.command.selector
+#admin
+  g:bukkit_admin:
+    permissions:
+    - bukkit.command.ban
+    - bukkit.command.ban.player
+    - bukkit.broadcast
+    - bukkit.broadcast.admin
+    - bukkit.command.help
+    - bukkit.command.kill
+    - bukkit.command.list
+    - bukkit.command.me
+    - bukkit.command.plugins
+    - bukkit.command.reload
+    - bukkit.command.save
+    - bukkit.command.save.disable
+    - bukkit.command.save.enable
+    - bukkit.command.save.perform
+    - bukkit.command.say
+    - bukkit.command.stop
+    - bukkit.command.teleport
+    - bukkit.command.tell
+    - bukkit.command.version
+###############
+#             #
+# DEATH CHEST #
+#             #
+###############
+#default
   g:dc_default:
     permissions:
     - deathchest.remove.own
     - deathchest.list.*
     - deathchest.giveBack
-#essentials
+#admin
+  g:dc_admin:
+    permissions:
+    - deathchest.remove.other
+    - deathchest.admin
+###############
+#             #
+# ESSENTIALS  #
+#             #
+###############
+#default
   g:essentials_default:
-    permissions:
-    - essentials.help
-    - essentials.helpop
-    - essentials.jail.allow.help
-    - essentials.jail.allow.helpop
-    - essentials.jail.allow.rules
-    - essentials.list
-    - essentials.motd
-    - essentials.rules
-    - essentials.spawn
-    - essentials.world
-    - essentials.worlds.depressed_plungers
-    - essentials.worlds.depressed_plungers_nether
-#groupmanager
-  g:groupmanager_default:
-    permissions:
-    - groupmanager.notify.self
-#lwc
-  g:lwc_default:
-    permissions:
-    - lwc.deny
-    - lwc.cdisplay
-#worldguard
-  g:wg_default:
-    permissions:
-    - worldguard.locate
-    - worldguard.stack
-    - worldguard.region.notify.member.*
-    - worldguard.region.list.member.*
-    - worldguard.region.info.member.*
-    - worldguard.region.load.member.*
-    - worldguard.region.save.member.*
-#vote
-  g:vote_default:
-    permissions:
-    - vote.voteyes.*
-    - vote.voteno.*
-    - vote.startvote.*
-
-#
-# BUILDER
-#
-#bukkit
-  #none
-#essentials
-  g:essentials_builder:
     permissions:
     - essentials.afk
     - essentials.afk.auto
     - essentials.back
     - essentials.back.ondeath
     - essentials.balance
+    - essentials.compass
+    - essentials.disposal
+    - essentials.hat
+    - essentials.help
+    - essentials.helpop
+    - essentials.ignore
+    - essentials.jail.allow.help
+    - essentials.jail.allow.helpop
+    - essentials.jail.allow.rules
+    - essentials.list
+    - essentials.motd
+    - essentials.near
+    - essentials.r
+    - essentials.rules
+    - essentials.spawn
+    - essentials.worlds.*
+#builder
+  g:essentials_builder:
+    permissions:
+    - essentials.afk.kickexempt
     - essentials.balance.others
     - essentials.balancetop
     - essentials.book
@@ -78,20 +106,15 @@ groups:
     - essentials.chat.format
     - essentials.chat.question
     - essentials.chat.shout
-    - essentials.compass
     - essentials.delhome
     - essentials.depth
     - essentials.exp
     - essentials.getpos
-    - essentials.hat
     - essentials.home
-    - essentials.ignore
     - essentials.itemdb
     - essentials.jail.allow.mail
     - essentials.jail.allow.ping
     - essentials.jail.allow.seen
-    - essentials.kit
-    - essentials.kits.tools
     - essentials.mail
     - essentials.mail.send
     - essentials.me
@@ -100,7 +123,6 @@ groups:
     - essentials.msg.format
     - essentials.nick
     - essentials.pay
-    - essentials.ping
     - essentials.powertool
     - essentials.powertooltoggle
     - essentials.protect
@@ -111,6 +133,7 @@ groups:
     - essentials.sethome
     - essentials.sethome.bed
     - essentials.sethome.multiple
+    - essentials.showkit
     - essentials.signs.break.disposal
     - essentials.signs.break.mail
     - essentials.signs.break.protection
@@ -128,6 +151,7 @@ groups:
     - essentials.time
     - essentials.time.set
     - essentials.tpa
+    - essentials.tpaall
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
@@ -135,15 +159,213 @@ groups:
     - essentials.warp.list
     - essentials.weather
     - essentials.worth
-#groupmanager
-  #none
-#lwc
+#moderator
+  g:essentials_moderator:
+    permissions:
+    - essentials.afk.kickexempt
+    - essentials.ban.notify
+    - essentials.book.others
+    - essentials.book.title
+    - essentials.broadcast
+    - essentials.chat.ignoreexempt
+    - essentials.chat.magic
+    - essentials.chat.url
+    - essentials.customtext
+    - essentials.delwarp
+    - essentials.exp.others
+    - essentials.fly
+    - essentials.fly.safelogin
+    - essentials.getpos.others
+    - essentials.gamemode.survival
+    - essentials.gamemode.spectator
+    - essentials.helpop.receive
+    - essentials.home.others
+    - essentials.invsee
+    - essentials.invsee.equip
+    - essentials.invsee.preventmodify
+    - essentials.jail.allow.jails
+    - essentials.jail.allow.togglejail
+    - essentials.jails
+    - essentials.joinfullserver
+    - essentials.jump
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.kick.exempt
+    - essentials.kill
+    - essentials.kit
+    - essentials.kits.mod
+    - essentials.msg.magic
+    - essentials.mute
+    - essentials.mute.notify
+    - essentials.near.lookup
+    - essentials.nick.color
+    - essentials.nick.others
+    - essentials.protect.admin
+    - essentials.protect.alerts
+    - essentials.protect.ownerinfo
+    - essentials.realname
+    - essentials.remove.tnt 
+    - essentials.rest
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.sethome.multiple.staff
+    - essentials.setjail  
+    - essentials.setwarp
+    - essentials.signs.protection.override
+    - essentials.silentjoin
+    - essentials.socialspy
+    - essentials.tempban
+    - essentials.thunder
+    - essentials.togglejail
+    - essentials.top
+    - essentials.tp
+    - essentials.tp.others
+    - essentials.tphere
+    - essentials.tppos
+    - essentials.tptoggle
+    - essentials.unban
+    - essentials.unbanip
+    - essentials.vanish
+    - essentials.vanish.effect
+    - essentials.whois
+    - essentials.workbench
+    - essentials.world
+#admin
+  g:essentials_admin:
+    permissions:
+    - -essentials.backup
+    - -essentials.essentials
+    - -essentials.setspawn
+    - -essentials.reloadall
+    - -essentials.plugin
+    - essentials.balancetop.force
+    - essentials.ban
+    - essentials.ban.exempt
+    - essentials.clearinventory.others
+    - essentials.delhome.others
+    - essentials.eco.loan
+    - essentials.eco.reset.*
+    - essentials.enderchest
+    - essentials.kits.admin
+    - essentials.mail.sendall
+    - essentials.signs.trade.override
+    - essentials.signs.break.*
+    - essentials.signs.create.balance
+    - essentials.signs.create.kit
+    - essentials.signs.create.info
+    - essentials.silentjoin.vanish
+    - essentials.tempban.exempt
+    - essentials.tempban.unlimited
+    - essentials.tpall
+#banker
+  g:essentials_banker:
+    permissions:
+    - essentials.eco
+    - essentials.signs.create.*
+    - essentials.editsign
+#################
+#               #
+# GROUP MANAGER #
+#               #
+#################
+#default
+  g:groupmanager_default:
+    permissions:
+    - groupmanager.notify.self
+#moderator
+  g:groupmanager_moderator:
+    permissions:
+    - groupmanager.listgroups
+    - groupmanager.mandemote
+    - groupmanager.manpromote
+    - groupmanager.manselect
+    - groupmanager.manuadd
+    - groupmanager.manudel
+    - groupmanager.manwhois
+    - groupmanager.notify.other
+#admin
+  g:groupmanager_admin:
+    permissions:
+    - groupmanager.mangcheckp
+    - groupmanager.manglistp
+    - groupmanager.mansave
+    - groupmanager.mantogglevalidate
+    - groupmanager.manucheckp
+    - groupmanager.manulistp
+#######
+#     #
+# LWC #
+#     #
+#######
+#default
+  g:lwc_default:
+    permissions:
+    - lwc.deny
+    - lwc.cdisplay
+#builder
   g:lwc_builder:
     permissions:
     - lwc.protect
     - lwctrust.trust
-
-#worldguard
+#moderator
+  g:lwc_moderator:
+    permissions:
+    - lwc.mod
+    - lwc.shownotices
+    - lwc.history
+    - lwc.details
+#admin
+  g:lwc_admin:
+    permissions:
+    - lwc.admin.view
+    - lwc.admin.find
+    - lwc.admin.forceowner
+    - lwc.admin.remove
+    - lwc.admin.purge
+    - lwc.admin.cleanup
+    - lwc.admin.update
+    - lwc.admin.report
+###############
+#             #
+# WORLD EDIT  #
+#             #
+###############
+#default
+  g:we_default:
+    permissions:
+    - worldedit.biome.list
+    - worldedit.chunkinfo
+    - worldedit.help
+#moderator
+  g:we_moderator:
+    permissions:
+    - worldedit.listchunks
+    - worldedit.selection.contract
+    - wordledit.selection.extend
+    - worldedit.selection.pos
+    - worldedit.selection.hpos
+    - worldedit.wand
+#admin
+  g:we_admin:
+    permissions:
+    - worldedit.reload
+###############
+#             #
+# WORLD GUARD #
+#             #
+###############
+#default
+  g:wg_default:
+    permissions:
+    - worldguard.locate
+    - worldguard.stack
+    - worldguard.region.notify.member.*
+    - worldguard.region.list.member.*
+    - worldguard.region.info.member.*
+    - worldguard.region.load.member.*
+    - worldguard.region.save.member.*
+    - worldguard.region.wand
+#builder
   g:wg_builder:
     permissions:
     - worldguard.region.notify.own.*
@@ -165,210 +387,17 @@ groups:
     - worldguard.region.flag.flags.notify-enter.* #notify when people enter
     - worldguard.region.flag.flags.notify-leave.* #notify when people leave
     - worldguard.region.flag.flags.greeting-title.* #set title for region
-
-#
-# MODERATOR
-#
-#bukkit
-  g:bukkit_moderator:
-    permissions:
-    - bukkit.command.kick
-    - bukkit.command.unban
-    - bukkit.command.unban.ip
-    - bukkit.command.unban.player
-    - bukkit.command.whitelist
-    - bukkit.command.whitelist.add
-    - bukkit.command.whitelist.disable
-    - bukkit.command.whitelist.enable
-    - bukkit.command.whitelist.list
-    - bukkit.command.whitelist.reload
-    - bukkit.command.whitelist.remove
-#essentials
-  g:essentials_moderator:
-    permissions:
-    - essentials.afk.kickexempt
-    - essentials.tempban
-    - essentials.book.others
-    - essentials.book.title
-    - essentials.broadcast
-    - essentials.chat.magic
-    - essentials.chat.url
-    - essentials.clearinventory
-    - essentials.delwarp
-    - essentials.eco.loan
-    - essentials.exp.others
-    - essentials.ext
-    - essentials.fly
-    - essentials.fly.safelogin
-    - essentials.getpos
-    - essentials.getpos.others
-    - essentials.helpop.receive
-    - essentials.home.others
-    - essentials.invsee
-    - essentials.jail.allow.jails
-    - essentials.jail.allow.togglejail
-    - essentials.jails
-    - essentials.jump
-    - essentials.kick
-    - essentials.kick.notify
-    - essentials.kill
-    - essentials.msg.magic
-    - essentials.mute
-    - essentials.mute.notify
-    - essentials.nick.color
-    - essentials.nick.others
-    - essentials.protect.admin
-    - essentials.protect.alerts
-    - essentials.protect.ownerinfo
-    - essentials.ptime
-    - essentials.ptime.others
-    - essentials.realname
-    - essentials.seen.banreason
-    - essentials.seen.extra
-    - essentials.setwarp
-    - essentials.thunder
-    - essentials.togglejail
-    - essentials.top
-    - essentials.tp
-    - essentials.tp.others
-    - essentials.tphere
-    - essentials.tppos
-    - essentials.tptoggle
-    - essentials.unban
-    - essentials.unbanip
-    - essentials.vanish
-    - essentials.vanish.effect
-    - essentials.warps.*
-    - essentials.whois
-    - essentials.workbench
-    - essentials.worlds.depressed_plungers_the_end
-    - essentials.sethome.multiple.staff
-#groupmanager
-  g:groupmanager_moderator:
-    permissions:
-    - groupmanager.listgroups
-    - groupmanager.mandemote
-    - groupmanager.manpromote
-    - groupmanager.manselect
-    - groupmanager.manuadd
-    - groupmanager.manudel
-    - groupmanager.manwhois
-    - groupmanager.notify.other
-#lwc
-  g:lwc_moderator:
-    permissions:
-    - lwc.mod
-    - lwc.shownotices
-    - lwc.history
-    - lwc.details
-#worldguard
+#moderator
   g:wg_moderator:
     permissions:
+    - worldguard.region.define
     - worldguard.region.addmember.*
     - worldguard.region.removemember.*
     - worldguard.region.staff
-#vanish
-  g:vanish_moderator:
-    permissions:
-    - sv.keepfly
-    - sv.login
-    - sv.logout
-    - sv.see.1
-    - sv.toggleitems
-    - sv.use.1
-    - vanish.hooks.essentials.hide
-#vote
-  g:vote_moderator:
-    permissions:
-    - vote.unkickable
-    - vote.veto
-
-
-
-
-
-#
-# ADMIN
-#
-#
-#bukkit
-  g:bukkit_admin:
-    permissions:
-    - bukkit.command.ban
-    - bukkit.command.ban.ip
-    - bukkit.command.ban.player
-    - -bukkit.command.op
-    - -bukkit.command.op.give
-    - -bukkit.command.op.take
-    - bukkit.broadcast
-    - bukkit.broadcast.admin
-    - bukkit.command.gamemode
-    - bukkit.command.give
-    - bukkit.command.help
-    - bukkit.command.kill
-    - bukkit.command.list
-    - bukkit.command.me
-    - bukkit.command.plugins
-    - bukkit.command.reload
-    - bukkit.command.save
-    - bukkit.command.save.disable
-    - bukkit.command.save.enable
-    - bukkit.command.save.perform
-    - bukkit.command.say
-    - bukkit.command.stop
-    - bukkit.command.teleport
-    - bukkit.command.tell
-    - bukkit.command.version
-#deathchest
-  g:dc_admin:
-    permissions:
-    - deathchest.remove.other
-    - deathchest.admin
-#essentials
-  g:essentials_admin:
-    permissions:
-    - -essentials.spawner.enderdragon
-    - -essentials.backup
-    - -essentials.essentials
-    - -essentials.setspawn
-    - -essentials.reloadall
-    - -essentials.plugin
-    - essentials.*
-    - essentials.ban
-    - essentials.ban.notify
-    - essentials.banip
-    - essentials.kick.exempt
-    - essentials.ban.exempt
-    - essentials.signs.break.*
-    - essentials.signs.create.*
-    - essentials.spawner
-    - essentials.spawner.*
-#groupmanager
-  g:groupmanager_admin:
-    permissions:
-    - groupmanager.mangcheckp
-    - groupmanager.manglistp
-    - groupmanager.mansave
-    - groupmanager.mantogglevalidate
-    - groupmanager.manucheckp
-    - groupmanager.manulistp
-#lwc
-  g:lwc_admin:
-    permissions:
-    - lwc.admin.view
-    - lwc.admin.find
-    - lwc.admin.forceowner
-    - lwc.admin.remove
-    - lwc.admin.purge
-    - lwc.admin.cleanup
-    - lwc.admin.update
-    - lwc.admin.report
-#worldguard
+#admin
   g:wg_admin:
     permissions:
     - worldguard.reload
-    - worldguard.region.wand
-    - worldguard.region.define
     - worldguard.region.unlimited
     - worldguard.region.list.*
     - worldguard.region.remove.*
@@ -379,7 +408,22 @@ groups:
     - worldguard.region.setpriority.*
     - worldguard.region.setparent.*
     - worldguard.region.flag.*
-#vanish
+###########
+#         #
+# VANISH  #
+#         #
+###########
+#moderator
+  g:vanish_moderator:
+    permissions:
+    - sv.keepfly
+    - sv.login
+    - sv.logout
+    - sv.see.1
+    - sv.toggleitems
+    - sv.use.1
+    - vanish.hooks.essentials.hide
+#admin
   g:vanish_admin:
     permissions:
     - sv.list
@@ -389,9 +433,46 @@ groups:
     - sv.reload
     - sv.see.2
     - sv.use.2
-#vote
+#########
+#       #
+# VOTE  #
+#       #
+#########
+#default
+  g:vote_default:
+    permissions:
+    - vote.voteyes.*
+    - vote.voteno.*
+    - vote.startvote.*
+#moderator
+  g:vote_moderator:
+    permissions:
+    - vote.unkickable
+    - vote.veto
+#admin
   g:vote_admin:
     permissions:
     - vote.setvalue
     - vote.reload
     - vote.unbannable
+########################################
+########################################
+########################################
+########################################
+#               OWNER                  #
+########################################
+########################################
+########################################
+########################################
+  g:owner:
+    permissions:
+    - '*'
+    - bukkit.*
+    - deathchest.*
+    - essentials.*
+    - groupmanager.*
+    - lwc.*
+    - worldedit.*
+    - worldguard.*
+    - vanish.*
+    - vote.*
