@@ -16,7 +16,7 @@ class Item:
     # gets name for worth.yml
     # None -> str
     def name(self):
-        return self.n.replace('_') #plugin compatibility
+        return self.n.replace('_','') #plugin compatibility
     def getbp(self):
         return round(self.sp * 0.4, 2)
     def getf(self):
@@ -125,18 +125,17 @@ class PriceParser:
                     items.write('    buyPrice: ' + str(i.getsp()) + '\n')
                     items.write('    quantity: 1.0\n')
             items.close()
-        return True
     
     #write sale prices
     def write_worth(self):
         if self.e:
             with open(sell_file, 'w') as out:
                 out.write('worth: \n')
-                for key in self.idb:
-                    s = '    ' + key + ': ' + str(self.idb[key].getbp()) + '\n'
+                for name in self.idb:
+                    i = self.idb[name]
+                    s = '    ' + i.name() + ': ' + str(i.getbp()) + '\n'
                     out.write(s)
             out.close()
-        return True
 
 if __name__=='__main__':
     pp = PriceParser(price_file)
