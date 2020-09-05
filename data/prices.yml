@@ -494,7 +494,7 @@ snow:
     buyPrice: 2.0
     quantity: 1.0
 ice:
-    buyPrice: 8.0
+    buyPrice: 16.0
     quantity: 1.0
 snow_block:
     buyPrice: 4.0
@@ -536,7 +536,7 @@ netherrack:
     buyPrice: 1.0
     quantity: 1.0
 soul_sand:
-    buyPrice: 49.0
+    buyPrice: 50.0
     quantity: 1.0
 glowstone:
     buyPrice: 1536.0
@@ -845,7 +845,7 @@ coal_block:
     buyPrice: 1152.0
     quantity: 1.0
 packed_ice:
-    buyPrice: 72.0
+    buyPrice: 145.0
     quantity: 1.0
 acacia_stairs:
     buyPrice: 16.0
@@ -974,7 +974,7 @@ black_stained_glass_pane:
     buyPrice: 5.47
     quantity: 1.0
 prismarine:
-    buyPrice: 5.47
+    buyPrice: 64.0
     quantity: 1.0
 prismarine_bricks:
     buyPrice: 5.47
@@ -1304,7 +1304,7 @@ dead_horn_coral_fan:
     buyPrice: 16.0
     quantity: 1.0
 blue_ice:
-    buyPrice: 650.0
+    buyPrice: 1300.0
     quantity: 1.0
 conduit:
     buyPrice: 20480.0
@@ -1523,13 +1523,13 @@ sign:
     buyPrice: 52.0
     quantity: 1.0
 bucket:
-    buyPrice: 768.0
+    buyPrice: 500.0
     quantity: 1.0
 water_bucket:
-    buyPrice: 768.0
+    buyPrice: 550.0
     quantity: 1.0
 lava_bucket:
-    buyPrice: 832.0
+    buyPrice: 1000.0
     quantity: 1.0
 minecart:
     buyPrice: 1280.0
@@ -2043,4 +2043,10 @@ stone_shovel:
     quantity: 1.0
 stone_pickaxe:
     buyPrice: 10.0
+    quantity: 1.0
+soul_soil:
+    buyPrice: 50.0
+    quantity: 1.0
+basalt:
+    buyPrice: 32.0
     quantity: 1.0
