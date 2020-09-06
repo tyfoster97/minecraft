@@ -1550,7 +1550,7 @@ leather:
     buyPrice: 256.0
     quantity: 1.0
 milk_bucket:
-    buyPrice: 833.0
+    buyPrice: 850.0
     quantity: 1.0
 pufferfish_bucket:
     buyPrice: 832.0
@@ -2049,4 +2049,7 @@ soul_soil:
     quantity: 1.0
 basalt:
     buyPrice: 32.0
+    quantity: 1.0
+bamboo:
+    buyPrice: 5.0
     quantity: 1.0
