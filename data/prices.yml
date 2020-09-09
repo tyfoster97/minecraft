@@ -53,22 +53,22 @@ dark_oak_planks:
     buyPrice: 8.0
     quantity: 1.0
 oak_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 spruce_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 birch_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 jungle_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 acacia_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 dark_oak_sapling:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 bedrock:
     buyPrice: 1000000.0
@@ -290,40 +290,40 @@ black_wool:
     buyPrice: 48.0
     quantity: 1.0
 dandelion:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 poppy:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 blue_orchid:
-    buyPrice: 32.0
+    buyPrice: 50.0
     quantity: 1.0
 allium:
-    buyPrice: 32.0
+    buyPrice: 50.0
     quantity: 1.0
 azure_bluet:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 red_tulip:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 orange_tulip:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 white_tulip:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 pink_tulip:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 oxeye_daisy:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 brown_mushroom:
-    buyPrice: 32.0
+    buyPrice: 35.0
     quantity: 1.0
 red_mushroom:
-    buyPrice: 32.0
+    buyPrice: 35.0
     quantity: 1.0
 gold_block:
     buyPrice: 18432.0
@@ -413,7 +413,7 @@ obsidian:
     buyPrice: 256.0
     quantity: 1.0
 torch:
-    buyPrice: 9.0
+    buyPrice: 10.0
     quantity: 1.0
 end_rod:
     buyPrice: 1536.0
@@ -500,7 +500,7 @@ snow_block:
     buyPrice: 4.0
     quantity: 1.0
 cactus:
-    buyPrice: 8.0
+    buyPrice: 10.0
     quantity: 1.0
 clay:
     buyPrice: 64.0
@@ -584,7 +584,7 @@ melon:
     buyPrice: 144.0
     quantity: 1.0
 vine:
-    buyPrice: 64.0
+    buyPrice: 65.0
     quantity: 1.0
 oak_fence_gate:
     buyPrice: 12.0
@@ -629,7 +629,7 @@ enchanting_table:
     buyPrice: 16736.0
     quantity: 1.0
 end_stone:
-    buyPrice: 8.0
+    buyPrice: 50.0
     quantity: 1.0
 end_stone_bricks:
     buyPrice: 8.0
@@ -650,7 +650,7 @@ tripwire_hook:
     buyPrice: 100.0
     quantity: 1.0
 emerald_block:
-    buyPrice: 73728.0
+    buyPrice: 153000.0
     quantity: 1.0
 spruce_stairs:
     buyPrice: 8.0
@@ -860,16 +860,16 @@ grass_path:
     buyPrice: 16.0
     quantity: 1.0
 sunflower:
-    buyPrice: 16.0
+    buyPrice: 50.0
     quantity: 1.0
 lilac:
-    buyPrice: 16.0
+    buyPrice: 40.0
     quantity: 1.0
 rose_bush:
-    buyPrice: 16.0
+    buyPrice: 40.0
     quantity: 1.0
 peony:
-    buyPrice: 16.0
+    buyPrice: 40.0
     quantity: 1.0
 tall_grass:
     buyPrice: 16.0
@@ -1433,7 +1433,7 @@ golden_hoe:
     buyPrice: 4200.0
     quantity: 1.0
 wheat_seeds:
-    buyPrice: 16.0
+    buyPrice: 15.0
     quantity: 1.0
 wheat:
     buyPrice: 24.0
@@ -1571,10 +1571,10 @@ clay_ball:
     buyPrice: 1024.0
     quantity: 1.0
 sugar_cane:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 kelp:
-    buyPrice: 32.0
+    buyPrice: 40.0
     quantity: 1.0
 dried_kelp_block:
     buyPrice: 288.0
@@ -1631,7 +1631,7 @@ cactus_green:
     buyPrice: 32.0
     quantity: 1.0
 cocoa_beans:
-    buyPrice: 32.0
+    buyPrice: 30.0
     quantity: 1.0
 lapis_lazuli:
     buyPrice: 864.0
@@ -1739,10 +1739,10 @@ dried_kelp:
     buyPrice: 32.0
     quantity: 1.0
 pumpkin_seeds:
-    buyPrice: 16.0
+    buyPrice: 20.0
     quantity: 1.0
 melon_seeds:
-    buyPrice: 16.0
+    buyPrice: 20.0
     quantity: 1.0
 beef:
     buyPrice: 64.0
@@ -1772,7 +1772,7 @@ gold_nugget:
     buyPrice: 227.55
     quantity: 1.0
 nether_wart:
-    buyPrice: 24.0
+    buyPrice: 25.0
     quantity: 1.0
 glass_bottle:
     buyPrice: 4.0
@@ -1814,7 +1814,7 @@ written_book:
     buyPrice: 448.0
     quantity: 1.0
 emerald:
-    buyPrice: 16384.0
+    buyPrice: 17000.0
     quantity: 1.0
 item_frame:
     buyPrice: 288.0
@@ -1823,10 +1823,10 @@ flower_pot:
     buyPrice: 192.0
     quantity: 1.0
 carrot:
-    buyPrice: 24.0
+    buyPrice: 25.0
     quantity: 1.0
 potato:
-    buyPrice: 24.0
+    buyPrice: 25.0
     quantity: 1.0
 baked_potato:
     buyPrice: 40.0
@@ -1934,13 +1934,13 @@ end_crystal:
     buyPrice: 5845.0
     quantity: 1.0
 chorus_fruit:
-    buyPrice: 24.0
+    buyPrice: 25.0
     quantity: 1.0
 popped_chorus_fruit:
     buyPrice: 56.0
     quantity: 1.0
 beetroot:
-    buyPrice: 24.0
+    buyPrice: 25.0
     quantity: 1.0
 beetroot_seeds:
     buyPrice: 16.0
@@ -2052,4 +2052,46 @@ basalt:
     quantity: 1.0
 bamboo:
     buyPrice: 5.0
+    quantity: 1.0
+sweet_berries:
+    buyPrice: 25.0
+    quantity: 1.0
+poison_tipped_arrow:
+    buyPrice: 270.0
+    quantity: 1.0
+soul_torch:
+    buyPrice: 200.0
+    quantity: 1.0
+weeping_vines:
+    buyPrice: 65.0
+    quantity: 1.0
+twisting_vines:
+    buyPrice: 65.0
+    quantity: 1.0
+crimson_fungus:
+    buyPrice: 35.0
+    quantity: 1.0
+crimson_nylium:
+    buyPrice: 50.0
+    quantity: 1.0
+warped_nylium:
+    buyPrice: 50.0
+    quantity: 1.0
+nether_sprouts:
+    buyPrice: 35.0
+    quantity: 1.0
+warped_fungus:
+    buyPrice: 35.0
+    quantity: 1.0
+crimson_roots:
+    buyPrice: 35.0
+    quantity: 1.0
+warped_roots:
+    buyPrice: 35.0
+    quantity: 1.0
+wither_rose:
+    buyPrice: 100000.0
+    quantity: 1.0
+lily_of_the_valley:
+    buyPrice: 40.0
     quantity: 1.0
